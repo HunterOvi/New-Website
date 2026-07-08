@@ -100,7 +100,7 @@ main, header, footer{ position:relative; z-index:2; }
 }
 
 .hero-avatar{
-  width:96px; height:96px; border-radius:50%; object-fit:cover;
+  width:140px; height:140px; border-radius:50%; object-fit:cover; object-position:center 20%;
   border:1px solid var(--glass-border); margin-bottom:22px;
   box-shadow:0 0 0 6px rgba(139,92,246,0.10), 0 8px 30px rgba(139,92,246,0.35);
   animation: avatarGlow 4s ease-in-out infinite;
