@@ -67,6 +67,7 @@ main, header, footer{ position:relative; z-index:2; }
   transition: padding .3s ease, background .3s ease;
 }
 .nav-logo{ font-family:var(--font-mono); font-size:14px; letter-spacing:0.5px; color:var(--text-hi); text-decoration:none; display:flex; align-items:center; gap:8px; }
+.nav-logo-icon{ width:24px; height:24px; border-radius:7px; display:block; }
 .nav-logo .dot{ width:8px; height:8px; border-radius:50%; background:var(--accent-cyan); box-shadow:0 0 10px var(--accent-cyan); }
 .nav-links{ display:flex; gap:28px; list-style:none; }
 .nav-links a{ color:var(--text-mid); text-decoration:none; font-size:14px; font-weight:500; transition:color .2s; }
