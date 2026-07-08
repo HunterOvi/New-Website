@@ -1,0 +1,74 @@
+{
+  "siteName": "MHO",
+  "name": "Mehedi Hasan Ovi",
+  "taglineHighlight": "builds things for the web.",
+  "role": "Your Role / Title Here",
+  "intro": "Add a short introduction here — who you are, what you build, and what you're currently focused on. Keep it to two or three sentences.",
+
+  "status": {
+    "available": true,
+    "location": "Dhaka, Bangladesh",
+    "focus": "Web Development"
+  },
+
+  "about": {
+    "paragraphs": [
+      "Add your story here. Talk about your background, how you got into your field, and what drives you. This is placeholder text — replace it with your own words.",
+      "Mention what kind of work you enjoy most, tools you reach for, and what you're currently learning or exploring."
+    ],
+    "stats": [
+      { "num": "--", "label": "PROJECTS SHIPPED" },
+      { "num": "--", "label": "YEARS EXPERIENCE" },
+      { "num": "--", "label": "TECHNOLOGIES" },
+      { "num": "--", "label": "HAPPY CLIENTS" }
+    ]
+  },
+
+  "skills": [
+    "HTML5", "CSS3", "JavaScript", "React", "Node.js",
+    "Git & GitHub", "Figma", "Tailwind CSS", "MongoDB", "Add more →"
+  ],
+
+  "projects": [
+    {
+      "size": "large",
+      "tag": "Featured",
+      "title": "Project One",
+      "desc": "Short description of what this project does and the problem it solves.",
+      "stack": ["React", "Node.js", "MongoDB"],
+      "link": "#"
+    },
+    {
+      "size": "small",
+      "tag": "Web App",
+      "title": "Project Two",
+      "desc": "Short one-line description here.",
+      "stack": ["Vue", "Firebase"],
+      "link": "#"
+    },
+    {
+      "size": "small",
+      "tag": "Tool",
+      "title": "Project Three",
+      "desc": "Short one-line description here.",
+      "stack": ["Python"],
+      "link": "#"
+    },
+    {
+      "size": "large",
+      "tag": "Case study",
+      "title": "Project Four",
+      "desc": "Short description of what this project does and the problem it solves.",
+      "stack": ["Next.js", "Tailwind"],
+      "link": "#"
+    }
+  ],
+
+  "contact": {
+    "heading": "Let's build something together.",
+    "desc": "Open to freelance work, collaborations, and interesting ideas. Reach out below.",
+    "email": "you@example.com",
+    "github": "#",
+    "linkedin": "#"
+  }
+}
