@@ -1,72 +1,57 @@
 {
   "siteName": "MHO",
-  "name": "Mehedi Hasan Ovi",
-  "taglineHighlight": "builds things for the web.",
-  "role": "Your Role / Title Here",
-  "intro": "Add a short introduction here — who you are, what you build, and what you're currently focused on. Keep it to two or three sentences.",
+  "name": "MD. Mehedi Hasan Ovi",
+  "avatar": "profile.jpg",
+  "taglineHighlight": "learns to build real software.",
+  "role": "Software Engineering Undergraduate · Daffodil International University",
+  "intro": "I'm an undergraduate Software Engineering student who enjoys turning ideas into working applications. Currently building my foundation in programming, databases, and full-stack web development.",
 
   "status": {
     "available": true,
     "location": "Dhaka, Bangladesh",
-    "focus": "Web Development"
+    "focus": "Software Engineering Student"
   },
 
   "about": {
     "paragraphs": [
-      "Add your story here. Talk about your background, how you got into your field, and what drives you. This is placeholder text — replace it with your own words.",
-      "Mention what kind of work you enjoy most, tools you reach for, and what you're currently learning or exploring."
+      "I'm an undergraduate student in the Department of Software Engineering at Daffodil International University. My interest in software started with wanting to understand how the apps and systems I used every day actually worked — and grew into a habit of building my own.",
+      "I'm currently focused on strengthening my core programming and problem-solving skills through coursework and hands-on projects, including my capstone project, an Employee Management System. I enjoy the process of taking a real-world problem, designing a system for it, and seeing it work end to end.",
+      "Outside of coursework, I'm steadily expanding into full-stack web development, and I'm always open to learning from real projects, internships, and collaborations."
     ],
     "stats": [
-      { "num": "--", "label": "PROJECTS SHIPPED" },
-      { "num": "--", "label": "YEARS EXPERIENCE" },
-      { "num": "--", "label": "TECHNOLOGIES" },
-      { "num": "--", "label": "HAPPY CLIENTS" }
+      { "num": "1", "label": "CAPSTONE PROJECT" },
+      { "num": "6", "label": "CORE SKILLS" },
+      { "num": "DIU", "label": "UNIVERSITY" },
+      { "num": "SWE", "label": "DEPARTMENT" }
     ]
   },
 
   "skills": [
-    "HTML5", "CSS3", "JavaScript", "React", "Node.js",
-    "Git & GitHub", "Figma", "Tailwind CSS", "MongoDB", "Add more →"
+    "C", "Java", "SQL", "HTML", "CSS", "JavaScript"
   ],
 
   "projects": [
     {
       "size": "large",
-      "tag": "Featured",
-      "title": "Project One",
-      "desc": "Short description of what this project does and the problem it solves.",
-      "stack": ["React", "Node.js", "MongoDB"],
+      "tag": "Capstone Project",
+      "title": "Employee Management System",
+      "desc": "A system built to manage employee records, streamline day-to-day HR operations, and organize company data efficiently — developed as my final-year capstone project.",
+      "stack": ["Java", "SQL", "HTML", "CSS"],
       "link": "#"
     },
     {
       "size": "small",
-      "tag": "Web App",
-      "title": "Project Two",
-      "desc": "Short one-line description here.",
-      "stack": ["Vue", "Firebase"],
-      "link": "#"
-    },
-    {
-      "size": "small",
-      "tag": "Tool",
-      "title": "Project Three",
-      "desc": "Short one-line description here.",
-      "stack": ["Python"],
-      "link": "#"
-    },
-    {
-      "size": "large",
-      "tag": "Case study",
-      "title": "Project Four",
-      "desc": "Short description of what this project does and the problem it solves.",
-      "stack": ["Next.js", "Tailwind"],
+      "tag": "Coming Soon",
+      "title": "More Projects",
+      "desc": "New projects will be added here as I build them.",
+      "stack": [],
       "link": "#"
     }
   ],
 
   "contact": {
-    "heading": "Let's build something together.",
-    "desc": "Open to freelance work, collaborations, and interesting ideas. Reach out below.",
+    "heading": "Let's connect.",
+    "desc": "Open to internships, collaborations, and opportunities to learn and build. Feel free to reach out.",
     "email": "you@example.com",
     "github": "#",
     "linkedin": "#"

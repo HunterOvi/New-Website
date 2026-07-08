@@ -51,6 +51,13 @@ function renderHero(data) {
   document.getElementById('heroRole').textContent = data.role;
   document.getElementById('heroDesc').textContent = data.intro;
 
+  const avatar = document.getElementById('heroAvatar');
+  if (data.avatar) {
+    avatar.src = data.avatar;
+    avatar.alt = data.name;
+    avatar.style.display = 'block';
+  }
+
   const status = data.status || {};
   const pulse = document.getElementById('statusPulse');
   const statusText = document.getElementById('statusText');
@@ -151,6 +158,68 @@ function setupInteractions() {
   window.addEventListener('scroll', () => {
     nav.style.padding = window.scrollY > 40 ? '8px 24px' : '12px 24px';
   });
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  setupScrollReveal(reduceMotion);
+  if (!reduceMotion) setupBlobParallax();
+}
+
+function setupScrollReveal(reduceMotion) {
+  const groups = [
+    document.querySelectorAll('.stat-card'),
+    document.querySelectorAll('.skill-pill'),
+    document.querySelectorAll('.project-card'),
+    [document.getElementById('aboutText')],
+    [document.querySelector('.contact-card')],
+    document.querySelectorAll('.section-head')
+  ];
+
+  groups.forEach(group => {
+    group.forEach((elNode, i) => {
+      if (!elNode) return;
+      elNode.classList.add('reveal', 'reveal-stagger');
+      elNode.style.setProperty('--stagger-delay', `${Math.min(i * 60, 300)}ms`);
+    });
+  });
+
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    document.querySelectorAll('.reveal').forEach(elNode => elNode.classList.add('in-view'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(elNode => observer.observe(elNode));
+}
+
+function setupBlobParallax() {
+  // Parallax is applied to the wrapper, not individual .blob elements,
+  // since each .blob already has its own CSS keyframe animation on `transform`
+  // and a CSS animation always wins over an inline transform on the same element.
+  const field = document.querySelector('.blob-field');
+  if (!field || !window.matchMedia('(pointer: fine)').matches) return;
+
+  let targetX = 0, targetY = 0, curX = 0, curY = 0;
+  window.addEventListener('mousemove', (e) => {
+    targetX = (e.clientX / window.innerWidth - 0.5) * 2;
+    targetY = (e.clientY / window.innerHeight - 0.5) * 2;
+  });
+
+  function animate() {
+    curX += (targetX - curX) * 0.04;
+    curY += (targetY - curY) * 0.04;
+    field.style.transform = `translate(${curX * 18}px, ${curY * 18}px)`;
+    requestAnimationFrame(animate);
+  }
+  requestAnimationFrame(animate);
 }
 
 loadContent();
